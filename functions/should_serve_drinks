@@ -1,0 +1,13 @@
+#!/usr/bin/env python3
+def should_serve_customer(customer_age, on_break, time):
+    #Age condition
+    if customer_age <= 20:
+        return False
+    #Bartender working
+    if on_break:
+        return False
+    #Time is from 5 - 10
+    elif time >= 5 and time <= 10:
+        return True
+    else:
+        return False
